@@ -83,29 +83,31 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm an anime-theme management bot [✨](https://telegra.ph/file/11b5922a33de9968cedfe.jpg)
+Saya adalah Bot Manajemen Group WARKOP [✨](https://telegra.ph/file/11b5922a33de9968cedfe.jpg)
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
 ────────────────────────
-✪ Hit /help to see my available commands.
+Ketik /help Untuk melihat command yang tersedia
 """
 
 buttons = [
-    [
-        InlineKeyboardButton(text="About Emiko Robot", callback_data="emiko_"),
-    ],
-    [
-        InlineKeyboardButton(text="Get Help", callback_data="help_back"),
-        InlineKeyboardButton(
-            text="Try inline!​​", switch_inline_query_current_chat=""
-        ),
-    ],
+   
     [
         InlineKeyboardButton(
-            text="➗ Add Emiko To Your Group ➗", url=f"t.me/{bu}?startgroup=new"),
+            text="CHANNEL", url= "t.me/OFCWARUNGKOPI"),
     ],
+     
+    [
+        InlineKeyboardButton(
+            text="Managed By", url= "t.me/pawfau"),
+        
+        InlineKeyboardButton(
+            text="BOT CHAT", url= "t.me/infonewarkopbot"),
+    ]
+    
 ]
+
 
 
 HELP_STRINGS = """
@@ -113,7 +115,7 @@ Click on the button bellow to get description about specifics command."""
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @excrybaby \
+ You can support the project by contacting @pawfau \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -360,7 +362,7 @@ def emiko_about_callback(update, context):
     query = update.callback_query
     if query.data == "emiko_":
         query.message.edit_text(
-            text="๏ I'm *Emiko*, a powerful group management bot built to help you manage your group easily."
+            text="Saya Adalah Acong*, Penjaga WARKOP dan membantu para admin manage group WARKOP"
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
@@ -435,14 +437,14 @@ def emiko_about_callback(update, context):
         )
     elif query.data == "emiko_support":
         query.message.edit_text(
-            text="*๏ Emiko support chats*"
+            text="* Acong support chats*"
             "\nJoin My Support Group/Channel for see or report a problem on Emiko.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/emikosupport"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/KennedyProject"),
+                    InlineKeyboardButton(text="Support", url="t.me/OFCWARUNGKOPI"),
+                   
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
