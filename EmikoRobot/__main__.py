@@ -83,7 +83,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-Saya adalah Bot Manajemen Group WARKOP [](https://telegra.ph/file/927c20dadf4d101114b0b.jpg)
+Saya adalah Bot Manajemen Group WARKOP [✨](https://telegra.ph/file/927c20dadf4d101114b0b.jpg)
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
